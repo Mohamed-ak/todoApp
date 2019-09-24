@@ -11,3 +11,11 @@ export function addTodo(title, body){
         body
     }
 } 
+
+export const TOGGLE_TODO = 'TOGGLE_TODO';
+export function toggleTodo(id){
+    return {
+        type: TOGGLE_TODO,
+        id
+    }
+}
