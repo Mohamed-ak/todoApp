@@ -2,18 +2,21 @@ import React from 'react'
 
 const Link = ({active, children, onClick}) => {
     if(active){
-        return <span>{children}</span>
+        return <li className="nav-item active"><a href="" className="nav-link">{children}</a></li>
     }
     return (
-        <a
-            href=''
-            onClick={(evt)=>{
-                evt.preventDefault();
-                onClick()
-            }}
-        >
-            {children}
-        </a>
+        <li className="nav-item">
+            <a
+                href=''
+                className="nav-link"
+                onClick={(evt)=>{
+                    evt.preventDefault();
+                    onClick()
+                }}
+                >
+                {children}
+            </a>
+        </li>
     )
 }
 
