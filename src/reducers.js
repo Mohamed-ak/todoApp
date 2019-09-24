@@ -1,3 +1,5 @@
+import { combineReducers } from 'redux';
+
 import {
     SET_VISIBILITY_FILTER,
     Visibility_Filters,
@@ -39,3 +41,9 @@ function todos(state=[], action){
     }
 }
 
+const todoApp = combineReducers({
+    visibilityFilter,
+    todos
+});
+
+export default todoApp;
