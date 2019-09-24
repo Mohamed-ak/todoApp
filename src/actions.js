@@ -19,3 +19,16 @@ export function toggleTodo(id){
         id
     }
 }
+
+export const SET_VISIBILITY_FILTER = "SET_VISIBILITY_FILTER";
+export const Visibility_Filters = {
+    SHOW_ALL: 'SHOW_ALL',
+    SHOW_COMPLETED: "SHOW_COMPLETED",
+    SHOW_ACTIVE: "SHOW_ACTIVE"
+}
+export function setVisibilityFilter(filter=Visibility_Filters.SHOW_ALL){
+    return {
+        type: SET_VISIBILITY_FILTER,
+        filter
+    }
+}
