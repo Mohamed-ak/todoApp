@@ -45,7 +45,7 @@ class AddTodo extends Component {
                 
                 <div className="form-group row">
                     <label className="col-sm-2" htmlFor="body">Comment</label>
-                    <textarea onChange={this.handleChangeOnBody} className="from-control col-sm-10" value={this.state.body} name="body" id="body" cols="30" rows="10"></textarea>
+                    <textarea onChange={this.handleChangeOnBody} className="from-control col-sm-10" value={this.state.body} name="body" id="body" cols="30" rows="2"></textarea>
                 </div>
                 <div className="form-group row">
                     <button onClick={this.handleSumbmit} className="btn btn-success " type="button">Save</button>
