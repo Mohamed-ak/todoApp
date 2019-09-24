@@ -5,6 +5,7 @@ import { createStore } from 'redux';
 import todoApp from './reducers';
 import App from './App';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import './customStyle.css'
 
 const store = createStore(todoApp);
 
