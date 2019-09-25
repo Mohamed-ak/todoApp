@@ -38,7 +38,7 @@ const Todo = ({onToggle, id, title, body, completed}) => {
             <div className="col-9">
                 <div className={"card border-"+styles.color}>
                     <div className="card-body">
-                        <p className="card-text">{body}</p>
+                        <p className="card-text">{(body)? body : 'No comment!'}</p>
                     </div>
                 </div>                
             </div>
