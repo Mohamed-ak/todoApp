@@ -26,7 +26,11 @@ class AddTodo extends Component {
             });
         }
         else{
-            this.props.onSave(this.state.title, this.state.body)
+            this.props.onSave(this.state.title, this.state.body);
+            this.setState({
+                title: '',
+                body: ''
+            })
         }
      }
     render() { 
